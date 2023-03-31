@@ -1,0 +1,17 @@
+GET http://localhost:5000/flashcard/export-flashcards/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3005",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": [
+                "616481a9855e9f0b16d96d34"  
+            ],
+            "MDP": [
+                "616481bd855e9f0b16d96d37",
+                "616481e6855e9f0b16d96d3a"
+            ]
+        }
+    }
+}

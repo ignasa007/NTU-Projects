@@ -1,0 +1,23 @@
+POST http://localhost:5000/flashcard/update-flashcard/246
+Content-Type: application/json
+
+{
+   "flashcard": {
+        "title":"bye",
+        "dueDate": null,
+        "front": "good",
+        "back": "world",
+        "level":0,
+        "hints": [
+            "<3",
+            ":)"
+        ]
+    },
+    "path": "./CZ3005/Intelligence/616a4e41613454ca2c7ad594/",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": ["616a4e41613454ca2c7ad594"],
+            "MDP": null
+        }
+    }
+}

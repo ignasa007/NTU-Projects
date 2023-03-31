@@ -1,0 +1,60 @@
+@import "../../styles";
+
+.flashcard-container {
+  height: 65vh;
+  width: 55vw;
+  padding: 0.4rem 1rem;
+  background: white;
+  border: 2px $light-grey solid;
+  border-radius: 1rem;
+  font-family: $body-font;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.flashcard-container > h2 {
+  font-family: $title-font;
+  font-size: 24px;
+  font-weight: 400;
+  color: $light-grey;
+}
+
+h3 {
+  font-family: $title-font;
+  font-size: 24px;
+  font-weight: 400;
+  color: $light-grey;
+}
+
+.sidebar {
+  height: 80vh;
+}
+
+.flashcard-list {
+  height: 70vh;
+}
+
+/* width */
+.flashcard-list::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+.flashcard-list::-webkit-scrollbar-track {
+  background: $primary-cold;
+}
+
+/* Handle */
+.flashcard-list::-webkit-scrollbar-thumb {
+  background: $dark-cold;
+}
+
+/* Handle on hover */
+.flashcard-list::-webkit-scrollbar-thumb:hover {
+  background: $primary-warm;
+}

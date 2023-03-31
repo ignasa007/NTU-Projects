@@ -1,0 +1,40 @@
+GET http://localhost:5000/flashcard/get-flashcards/"cf42c68a-55f6-4485-9618-3454b84415c3"
+Content-Type: application/json
+
+{
+    "paths": [
+        "./123"
+    ],
+    "dirStructure": {
+  "123": [
+    "616a5b710a1fc5512ee49679"
+  ],
+  "1234": null,
+  "MeowMeow": {
+    "abk": null
+  }
+}
+}
+
+###
+
+GET http://localhost:5000/flashcard/get-flashcards/246
+Content-Type: application/json
+
+{
+    "paths": [
+        "./CZ3005/Intelligence",
+        "./CZ3005/MDP"
+    ],
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": [
+                "615d73a484e0e6c3ecabee1f"
+            ],
+            "MDP": [
+               "615d73d984e0e6c3ecabee22",
+               "615d740184e0e6c3ecabee25"
+            ]
+        }
+    }
+}

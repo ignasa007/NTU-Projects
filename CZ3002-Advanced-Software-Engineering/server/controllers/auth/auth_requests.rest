@@ -1,0 +1,60 @@
+POST http://localhost:5000/signUp
+Content-Type: application/json
+
+{
+    "email": "jasrajs023@gmail.com",
+    "password": "Hola@123",
+    "name": "jasraj",
+    "preferred_username": "jas"
+}
+
+###
+
+POST http://localhost:5000/login/
+Content-Type: application/json
+
+{
+    "username": "jasrajs023@gmail.com",
+    "password": "Hola@123"
+}
+
+###
+
+POST http://localhost:5000/login/forgot-password
+Content-Type: application/json
+
+{
+    "username": "jasrajs023@gmail.com"
+}
+
+###
+
+POST http://localhost:5000/login/reset-password
+Content-Type: application/json
+
+{
+    "username": "jasrajs023@gmail.com",
+    "code": "774179",
+    "new_password": "Hello@123"
+}
+
+###
+
+POST http://localhost:5000/login/
+Content-Type: application/json
+
+{
+    "username": "jasrajs023@gmail.com",
+    "password": "Hello@123"
+}
+
+###
+
+POST http://localhost:5000/profile/change-password
+Content-Type: application/json
+
+{
+    "username": "jasrajs023@gmail.com",
+    "old_password": "Hello@123",
+    "new_password": "Hola@123"
+}

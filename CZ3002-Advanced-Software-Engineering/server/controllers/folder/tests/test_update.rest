@@ -1,0 +1,115 @@
+GET http://localhost:5000/folders/246
+
+###
+
+GET http://localhost:5000/folders/"cf42c68a-55f6-4485-9618-3454b84415c3"
+
+###
+
+PUT http://localhost:5000/folders/add-folder/"cf42c68a-55f6-4485-9618-3454b84415c3"
+Content-Type: application/json
+
+{
+    "path": "./MeowMeow/abk",
+    "dirStructure": {"MeowMeow":null,"abj":null}
+}
+
+###
+PUT http://localhost:5000/folders/add-folder/"cf42c68a-55f6-4485-9618-3454b84415c3"
+Content-Type: application/json
+
+{
+    "path": "./aoe",
+    "dirStructure": null
+}
+
+###
+
+PUT http://localhost:5000/folders/add-folder/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3002/",
+    "dirStructure": null
+}
+
+###
+
+PUT http://localhost:5000/folders/add-folder/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3005/Intelligence/",
+    "dirStructure": {
+        "CZ3005": null
+    }
+}
+
+###
+
+PUT http://localhost:5000/folders/add-folder/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3005/MDP/",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": null
+        }
+    }
+}
+
+###
+
+PUT http://localhost:5000/folders/add-folder/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3005/MDP/hello",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": null,
+            "MDP": [
+                123, 
+                235
+            ]
+        }
+    }
+}
+
+###
+
+PUT http://localhost:5000/folders/rename-folder/246
+Content-Type: application/json
+
+{
+    "newName": "CZ3002",
+    "path": "./CZ3005",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": null,
+            "MDP": [
+                123, 
+                235
+            ]
+        }
+    }
+}
+
+### 
+
+PUT http://localhost:5000/folders/delete-folder/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3002/MDP",
+    "dirStructure": {
+        "CZ3002": {
+            "Intelligence": null,
+            "MDP": [
+                123, 
+                235
+            ]
+        }
+    }
+}

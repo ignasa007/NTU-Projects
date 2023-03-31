@@ -1,0 +1,40 @@
+{
+  "name": "memoise-backend",
+  "version": "1.0.0",
+  "description": "Spaced repetition is a study technique that is usually done with flashcards, with flashcards containing newer or more difficult information being reviewed more frequently while flashcards with older and easier content are reviewed less frequently. It is an evidence-based learning technique that exploits the psychological spacing effect, which shows that more information is encoded into long-term memory by spaced study sessions rather than by cramming. This has been proven to increase the rate of learning, and is effective in improving memory, learning languages and even acquiring skills. Memoise is a website for assisting students with active learning using flashcards and spaced repetition.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignasa007/Memoise-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignasa007/Memoise-backend/issues"
+  },
+  "homepage": "https://github.com/ignasa007/Memoise-backend#readme",
+  "dependencies": {
+    "aws-amplify": "^4.2.9",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "jszip": "^3.7.1",
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jest": "^27.1.1"
+  }
+}

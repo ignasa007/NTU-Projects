@@ -1,0 +1,17 @@
+POST http://localhost:5000/flashcard/delete-flashcard/246
+Content-Type: application/json
+
+{
+    "path": "./CZ3005/Intelligence/616b0df01cab792cd0e5b4ef/",
+    "dirStructure": {
+      "CZ3005": {
+        "Intelligence": [
+          "616b0df01cab792cd0e5b4ef",
+          "616b0ed31cab792cd0e5b4f8"
+        ],
+        "MDP": [
+          "616b0eed1cab792cd0e5b4fb"
+        ]
+      }
+    }
+}

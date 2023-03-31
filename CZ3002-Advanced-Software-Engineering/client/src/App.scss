@@ -1,0 +1,275 @@
+@import "styles";
+
+body {
+  background-color: $base-color;
+  font-family: $body-font;
+}
+
+.App {
+  background-color: $base-color;
+  font-family: $body-font;
+}
+
+.App-header {
+  background-color: $primary-warm;
+  min-height: 5vh;
+  text-align: left;
+  font-size: 24px;
+  padding: 5px 1rem;
+  color: black;
+  width: 100%;
+  position: sticky;
+  flex: auto;
+  font-family: $title-font;
+  font-weight: 700;
+}
+
+.App-body {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: $title-font;
+  font-size: 1.1rem;
+}
+
+.App-body > h1 {
+  font-family: $title-font;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.App-body > p2 {
+  font-size: 33px;
+}
+
+.App-body > p3 {
+  font-size: 44px;
+  text-decoration: underline;
+}
+
+.wrapper-class {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.editor-class {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  padding-bottom: 15rem;
+}
+.toolbar-class {
+  border: 1px solid #ccc;
+}
+
+input {
+  background: #ffffff;
+  height: 2.5rem;
+  width: 100%;
+  border: 0.1rem solid #000000;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: block;
+  position: relative;
+}
+
+.error {
+  text-align: left;
+  font-family: $title-font;
+  color: $dark-warm;
+  margin-bottom: 0.5rem;
+}
+
+.success {
+  text-align: left;
+  font-family: $title-font;
+  color: $dark-cold;
+  margin-bottom: 0.5rem;
+}
+
+.form-inner {
+  text-align: center;
+  width: 25rem;
+}
+
+.form-group {
+  text-align: left;
+  font-family: $title-font;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  margin: 0 0;
+}
+
+.subtle {
+  color: grey;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  line-height: 0.1em;
+  margin: 2rem 0 1.5rem;
+}
+
+.subtle > span {
+  background: $base-color;
+  padding: 0 10px;
+}
+
+button {
+  height: 2.5rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  border: 0;
+  padding: 0;
+  font-family: $title-font;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  // margin: 0 1.5rem;
+}
+
+.warm-button {
+  background-color: $primary-warm;
+}
+
+.warm-button:hover {
+  background-color: $secondary-warm;
+}
+
+.cold-button {
+  background-color: $primary-cold;
+}
+
+.cold-button:hover {
+  background-color: $dark-cold;
+}
+
+.neutral-button {
+  background-color: $primary-neutral;
+}
+
+.neutral-button:hover {
+  background-color: $secondary-neutral;
+}
+
+.auth-button {
+  background-color: $primary-neutral;
+  width: 100%;
+}
+
+.auth-button:hover {
+  background-color: $secondary-neutral;
+}
+
+input[type="submit"] {
+  border: 0;
+  padding: 0;
+  background-color: $primary-warm;
+  font-family: $title-font;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+input[type="submit"]:hover {
+  background-color: $secondary-warm;
+}
+
+a {
+  color: $primary-warm;
+  font-weight: 700;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: $secondary-warm;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  color: grey;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: $primary-neutral;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $primary-neutral transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

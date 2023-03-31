@@ -1,0 +1,1 @@
+To select the 30 most discriminative genes for each subtype, we can set labels to 1 when the true label for a sample is the label we are choosing features for, and 0 otherwise. Following this we can select the 30 most discrimintive genes by employing the same methodology as in Q4.

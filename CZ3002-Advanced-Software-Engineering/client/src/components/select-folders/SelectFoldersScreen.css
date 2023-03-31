@@ -1,0 +1,33 @@
+.bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 0rem;
+  height: 30rem;
+}
+
+.poup {
+  border-width: 3rem 5rem;
+  border-color: rgba(0, 0, 0, 0.5);
+  height: 32rem;
+  width: 80rem;
+  padding: 1rem 3rem;
+  /*margin: 3rem 5rem; */
+  background-color: #fdf9c9;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ff9f35;
+  color: white;
+  border: 1px solid #ff9f35;
+  margin: 0 1rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 2em;
+}

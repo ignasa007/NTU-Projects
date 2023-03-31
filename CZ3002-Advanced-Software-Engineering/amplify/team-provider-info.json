@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-memoise-dev-125631-authRole",
+      "UnauthRoleArn": "arn:aws:iam::595902706333:role/amplify-memoise-dev-125631-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::595902706333:role/amplify-memoise-dev-125631-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-memoise-dev-125631-deployment",
+      "UnauthRoleName": "amplify-memoise-dev-125631-unauthRole",
+      "StackName": "amplify-memoise-dev-125631",
+      "StackId": "arn:aws:cloudformation:us-east-1:595902706333:stack/amplify-memoise-dev-125631/4da4f450-1a98-11ec-bd44-0ef636b25e3d",
+      "AmplifyAppId": "dybhhbkm35ozf"
+    },
+    "categories": {
+      "function": {
+        "memoiseCustomMessage": {
+          "REDIRECTURL": "http://localhost:3000/home/",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": "",
+          "deploymentBucketName": "amplify-memoise-dev-125631-deployment",
+          "s3Key": "amplify-builds/memoiseCustomMessage-716a3865424159435370-build.zip"
+        },
+        "MemoiseCustomMessage": {
+          "REDIRECTURL": "http://localhost:3000/home",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": "",
+          "deploymentBucketName": "amplify-memoise-dev-125631-deployment",
+          "s3Key": "amplify-builds/MemoiseCustomMessage-716a3865424159435370-build.zip"
+        }
+      }
+    }
+  }
+}

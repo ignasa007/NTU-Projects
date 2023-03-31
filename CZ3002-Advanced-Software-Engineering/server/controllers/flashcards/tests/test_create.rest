@@ -1,0 +1,109 @@
+POST http://localhost:5000/flashcard/add-flashcard/3763f7d2-69fd-45a3-a21f-6480d4b17597
+Content-Type: application/json
+
+{
+    "flashcard": {
+        "title": "english",
+        "dueDate": null,
+        "front": "hello",
+        "back": "world",
+        "hints": [
+            "!",
+            ":)"
+        ]
+    },
+    "path": "./CZ3005/Intelligence/",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": null,
+            "MDP": null
+        }
+    }
+}
+
+###
+
+POST http://localhost:5000/flashcard/add-flashcard/246
+Content-Type: application/json
+
+{
+    "flashcard": {
+        "title": "english",
+        "dueDate": null,
+        "front": "hello",
+        "back": "world",
+        "hints": [
+            "!",
+            ":)"
+        ]
+    },
+    "path": "./New Folder/",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": [
+                "616b0df01cab792cd0e5b4ef"
+            ],
+            "MDP": null
+        }
+    }
+}
+
+###
+
+GET http://localhost:5000/folders/"cf42c68a-55f6-4485-9618-3454b84415c3"
+###
+
+POST http://localhost:5000/flashcard/add-flashcard/246
+Content-Type: application/json
+
+{
+    "flashcard": {
+        "title": "spanish",
+        "dueDate": null,
+        "textFront": "hola",
+        "textBack": "world",
+        "hints": [
+            "some",
+            "emoji"
+        ]
+    },
+    "path": "./CZ3005/MDP/",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": [
+            "616b0df01cab792cd0e5b4ef",
+            "616b0ed31cab792cd0e5b4f8"
+            ],
+            "MDP": null
+        }
+    }
+}
+
+###
+
+POST http://localhost:5000/flashcard/add-flashcard/246
+Content-Type: application/json
+
+{
+    "flashcard": {
+        "title": "gibberish",
+        "dueDate": null,
+        "ront": "some other",
+        "ack": "greeting",
+        "hints": [
+            "random",
+            "shit"
+        ]
+    },
+    "path": "./CZ3005/MDP/",
+    "dirStructure": {
+        "CZ3005": {
+            "Intelligence": [
+                "616481a9855e9f0b16d96d34"
+            ],
+            "MDP": [
+               "616481bd855e9f0b16d96d37"
+            ]
+        }
+    }
+}
